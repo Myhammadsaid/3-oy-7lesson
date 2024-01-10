@@ -60,7 +60,7 @@ body header nav .nav-links {
   align-items: center;
   gap: 24px;
 }
-body header nav .nav-links #navbar-responsive.open {
+#navbar-responsive.open {
   left: 0;
 }
 body header nav .nav-links a {
@@ -84,6 +84,11 @@ body header nav .nav-links .nav-btn1 {
   line-height: normal;
   background: inherit;
   cursor: pointer;
+  transition: 0.5s;
+}
+body header nav .nav-links .nav-btn1:hover {
+  border: 1px solid #173a56;
+  color: #bcd0e5;
 }
 body header nav .nav-links .nav-btn2 {
   border-radius: 4px;
@@ -95,8 +100,14 @@ body header nav .nav-links .nav-btn2 {
   line-height: normal;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
 }
-body header nav .nav-links #light-dark {
+body header nav .nav-links .nav-btn2:hover {
+  border: 1px solid #02897a;
+  background: #fff;
+  color: #02897a;
+}
+#light-dark {
   display: flex;
   width: 32px;
   height: 32px;
@@ -108,13 +119,15 @@ body header nav .nav-links #light-dark {
   border: none;
   cursor: pointer;
 }
-body header nav .nav-links .dark {
+/* body header nav .nav-links */
+.dark {
   background: black;
 }
-body header nav .nav-links .dark * {
+/* body header nav .nav-links  */
+.dark * {
   color: white !important;
 }
-body header nav .nav-links .menu-btn {
+.menu-btn {
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -123,7 +136,8 @@ body header nav .nav-links .menu-btn {
   gap: 4px;
   display: none;
 }
-body header nav .nav-links .menu-btn .line {
+/* body header nav .nav-links  */
+.menu-btn span {
   display: block;
   width: 30px;
   height: 4px;
@@ -165,6 +179,12 @@ body main .hero-style .hero-btn1 {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  transition: 0.5s;
+}
+body main .hero-style .hero-btn1:hover {
+  border: 1px solid #02897a;
+  background: #fff;
+  color: #02897a;
 }
 body main .hero-style .hero-btn2 {
   display: flex;
@@ -223,6 +243,12 @@ body main .pricing-style .pricing-btn {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  transition: 0.5s;
+}
+body main .pricing-style .pricing-btn:hover {
+  border: 1px solid #02897a;
+  background: #fff;
+  color: #02897a;
 }
 body main .pricing-style .pricing-btns {
   display: flex;
@@ -250,20 +276,38 @@ body main .product-style .product-cards .product-card .product-content {
   padding-left: 70px;
   margin: 0 auto;
 }
-body main .product-style .product-cards .product-card .product-content .product-title {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-title {
   color: #22343d;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-body main .product-style .product-cards .product-card .product-content .product-text1 {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-text1 {
   color: #22343d;
   font-size: 32px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 23px;
 }
-body main .product-style .product-cards .product-card .product-content .product-par {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-par {
   max-width: 486px;
   color: #22343d;
   font-size: 16px;
@@ -271,19 +315,38 @@ body main .product-style .product-cards .product-card .product-content .product-
   line-height: 26px;
   margin-bottom: 30px;
 }
-body main .product-style .product-cards .product-card .product-content .product-text2 {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-text2 {
   color: #22343d;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
 }
-body main .product-style .product-cards .product-card .product-content .product-svg-title {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-svg-title {
   display: flex;
   align-items: center;
   gap: 30px;
   margin-bottom: 30px;
 }
-body main .product-style .product-cards .product-card .product-content .product-svg-title .product-par2 {
+body
+  main
+  .product-style
+  .product-cards
+  .product-card
+  .product-content
+  .product-svg-title
+  .product-par2 {
   max-width: 365px;
   color: #22343d;
   font-size: 16px;
@@ -333,6 +396,12 @@ body main .proces-style .proces-btns .proces-btn {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 150px;
+  transition: 0.5s;
+}
+body main .proces-style .proces-btns .proces-btn:hover {
+  border: 1px solid #02897a;
+  background: #fff;
+  color: #02897a;
 }
 body main .proces-style .proces-svg {
   position: absolute;
@@ -526,14 +595,26 @@ body main .comment-style .comment-cards .comment-card .comment-content {
   align-items: center;
   gap: 14px;
 }
-body main .comment-style .comment-cards .comment-card .comment-content .comment-name {
+body
+  main
+  .comment-style
+  .comment-cards
+  .comment-card
+  .comment-content
+  .comment-name {
   color: #02897a;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.2px;
 }
-body main .comment-style .comment-cards .comment-card .comment-content .comment-name2 {
+body
+  main
+  .comment-style
+  .comment-cards
+  .comment-card
+  .comment-content
+  .comment-name2 {
   color: #252b42;
   font-size: 14px;
   font-weight: 500;
@@ -573,6 +654,12 @@ body main .subscrib-style .subs-box .subs-content .subs-btn {
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
+  transition: 0.5s;
+}
+body main .subscrib-style .subs-box .subs-content .subs-btn:hover {
+  border: 1px solid #fff;
+  background: #02897a;
+  color: #fff;
 }
 body footer .footer-style {
   display: flex;
@@ -647,6 +734,12 @@ body footer .footer-style .footer-content4 .footer-btn {
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+  transition: 0.5s;
+}
+body footer .footer-style .footer-content4 .footer-btn:hover {
+  border: 1px solid #02897a;
+  background: #fff;
+  color: #02897a;
 }
 body footer .footer-p {
   margin: 0 auto;
@@ -678,7 +771,7 @@ body #backtop {
   transition: 0.6s;
 }
 @media (max-width: 1115px) {
-  body header #navbar-responsive {
+  #navbar-responsive {
     position: fixed;
     top: 120px;
     bottom: 0;
@@ -691,7 +784,7 @@ body #backtop {
     background-color: #ccc;
     transition: 0.5s;
   }
-  body header .menu-btn {
+  .menu-btn {
     display: flex;
   }
   body .proces-svg {
@@ -738,4 +831,4 @@ body #backtop {
   body .comment-card {
     margin-bottom: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
